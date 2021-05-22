@@ -34,9 +34,9 @@ Model-view-controller (MVC) is an architectural pattern widely used to design us
 A Model is the application's principal central component. It receives user inputs and commands via the View component and uses the logic to generate outputs, which is shown again via the View component. This Model comprises of various sub-models which represent each disease. In this project, I have used my own custom CNN model.
 
 
-Epilepsy model
+*Epilepsy model*
 
-For designing the epilepsy CNN model, I have taken a dataset comprising of a CSV file of around 2 lac recordings. The dataset is then divided into the train set and test set in 4:1 ratio. Then Convolutional Neural Network (CNN) has been applied, having 10 convolutional layers and one fully-connected layer. ‘relu’ and ‘sigmoid’ activation functions are applied to the hidden layers and the output layer respectively. While compiling ‘binary_crossentropy’ has been used as the loss function and ‘adam’ as an optimization function. This model is then converted into Tensorflow Lite(.tflite) format before using it in Android Studio.
+For designing the epilepsy CNN model, I have taken a dataset comprising of a CSV file of around 2 lac recordings. The dataset is then divided into the train set and test set in 4:1 ratio. Then Convolutional Neural Network (CNN) has been applied, having 2 conv1D layers and 4 fully-connected layers. ‘relu’ and ‘sigmoid’ activation functions are applied to the hidden layers and the output layer respectively. While compiling ‘binary_crossentropy’ has been used as the loss function and ‘adam’ as an optimization function. This model is then converted into Tensorflow Lite(.tflite) format before using it in Android Studio.
 
 The trained model has achieved an accuracy of 96% on the validation dataset.
 
@@ -71,4 +71,4 @@ The application is “apk” installable and can be installed in the following w
 3. Open the “Pediatric Epileptic Seizure Detector” to run the application.
 
 
-(**Note:** The custom CNN models are not uploaded in the repository.)
+(**Note:** The custom CNN model is not uploaded in the repository.)
